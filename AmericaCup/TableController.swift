@@ -9,38 +9,62 @@
 import UIKit
 
 class TableController: UITableViewController {
-
+    
+    var items = [[String:AnyObject]]()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
+        
+        let url = URL(string: "https://www.ralfebert.de/examples/fruits.json")!
+        let urlSession = URLSession.shared
+        
+        let task = urlSession.dataTask(with: url) { (data, response, error) in
+            
+            // JSON parsen und Ergebnis in eine Liste von assoziativen Arrays wandeln
+            let jsonData = try! JSONSerialization.jsonObject(with: data!, options: [])
+            self.items = jsonData as! [[String:AnyObject]]
+            
+            // UI-Darstellung aktualisieren
+            OperationQueue.main.addOperation {
+                self.tableView.reloadData()
+            }
+        }
+        
+        task.resume()
+        
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
 
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
         // self.navigationItem.rightBarButtonItem = self.editButtonItem
     }
+    
+    
 
     // MARK: - Table view data source
 
     override func numberOfSections(in tableView: UITableView) -> Int {
         // #warning Incomplete implementation, return the number of sections
-        return 0
+        return 1
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return 0
+        return items.count
     }
-
-    /*
+    
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier", for: indexPath)
 
         // Configure the cell...
+        let item = items[indexPath.row]
+        
+        cell.textLabel?.text = item["title"] as? String
 
         return cell
     }
-    */
+ 
 
     /*
     // Override to support conditional editing of the table view.
