@@ -16,6 +16,8 @@
 		6399F57F22D975CC00D0569E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6399F57D22D975CC00D0569E /* LaunchScreen.storyboard */; };
 		6399F58A22D975CD00D0569E /* AmericaCupTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6399F58922D975CD00D0569E /* AmericaCupTests.swift */; };
 		6399F59522D975CD00D0569E /* AmericaCupUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6399F59422D975CD00D0569E /* AmericaCupUITests.swift */; };
+		DF7E54A922E56393004BED88 /* marvel.json in Resources */ = {isa = PBXBuildFile; fileRef = DF7E54A822E56393004BED88 /* marvel.json */; };
+		DF7E54AB22E563D3004BED88 /* response.json in Resources */ = {isa = PBXBuildFile; fileRef = DF7E54AA22E563D3004BED88 /* response.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +53,8 @@
 		6399F59022D975CD00D0569E /* AmericaCupUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AmericaCupUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6399F59422D975CD00D0569E /* AmericaCupUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AmericaCupUITests.swift; sourceTree = "<group>"; };
 		6399F59622D975CD00D0569E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DF7E54A822E56393004BED88 /* marvel.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = marvel.json; sourceTree = "<group>"; };
+		DF7E54AA22E563D3004BED88 /* response.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = response.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,6 +113,8 @@
 				6399F57D22D975CC00D0569E /* LaunchScreen.storyboard */,
 				6399F58022D975CC00D0569E /* Info.plist */,
 				636C7E9E22E25F8C001D8870 /* TableController.swift */,
+				DF7E54A822E56393004BED88 /* marvel.json */,
+				DF7E54AA22E563D3004BED88 /* response.json */,
 			);
 			path = AmericaCup;
 			sourceTree = "<group>";
@@ -237,6 +243,8 @@
 			files = (
 				6399F57F22D975CC00D0569E /* LaunchScreen.storyboard in Resources */,
 				6399F57C22D975CC00D0569E /* Assets.xcassets in Resources */,
+				DF7E54A922E56393004BED88 /* marvel.json in Resources */,
+				DF7E54AB22E563D3004BED88 /* response.json in Resources */,
 				6399F57A22D975BC00D0569E /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
