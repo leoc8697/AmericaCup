@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		636C7E9F22E25F8C001D8870 /* TableController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 636C7E9E22E25F8C001D8870 /* TableController.swift */; };
 		6399F57322D975BC00D0569E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6399F57222D975BC00D0569E /* AppDelegate.swift */; };
 		6399F57522D975BC00D0569E /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6399F57422D975BC00D0569E /* FirstViewController.swift */; };
 		6399F57722D975BC00D0569E /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6399F57622D975BC00D0569E /* SecondViewController.swift */; };
@@ -38,7 +37,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		636C7E9E22E25F8C001D8870 /* TableController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableController.swift; sourceTree = "<group>"; };
 		6399F56F22D975BC00D0569E /* AmericaCup.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AmericaCup.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6399F57222D975BC00D0569E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6399F57422D975BC00D0569E /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
@@ -112,7 +110,6 @@
 				6399F57B22D975CC00D0569E /* Assets.xcassets */,
 				6399F57D22D975CC00D0569E /* LaunchScreen.storyboard */,
 				6399F58022D975CC00D0569E /* Info.plist */,
-				636C7E9E22E25F8C001D8870 /* TableController.swift */,
 				DF7E54A822E56393004BED88 /* marvel.json */,
 				DF7E54AA22E563D3004BED88 /* response.json */,
 			);
@@ -270,7 +267,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				636C7E9F22E25F8C001D8870 /* TableController.swift in Sources */,
 				6399F57722D975BC00D0569E /* SecondViewController.swift in Sources */,
 				6399F57322D975BC00D0569E /* AppDelegate.swift in Sources */,
 				6399F57522D975BC00D0569E /* FirstViewController.swift in Sources */,

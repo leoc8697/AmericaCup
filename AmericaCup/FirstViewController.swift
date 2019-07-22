@@ -8,14 +8,12 @@
 
 import UIKit
 
-class FirstViewController: UIViewController {
-    
+class FirstViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
     @IBOutlet weak var labelHeader: UILabel!
-    
     @IBOutlet weak var tableView: UITableView!
     
-   
+    
     var movieList = [MarvelData]()
     
     
