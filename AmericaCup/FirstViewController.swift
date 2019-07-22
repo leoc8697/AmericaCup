@@ -12,9 +12,8 @@ class FirstViewController: UIViewController, UITableViewDelegate, UITableViewDat
     
     @IBOutlet weak var labelHeader: UILabel!
     @IBOutlet weak var tableView: UITableView!
-    
-    
-    var movieList = [MarvelData]()
+       
+    var movieList = [MatchData]()
     
     
     override func viewDidLoad() {
@@ -86,7 +85,7 @@ class FirstViewController: UIViewController, UITableViewDelegate, UITableViewDat
             print(name ?? "NA")
             print(jsonArray.last!["year"] as? Int ?? 1970)
             
-            movieList = jsonArray.compactMap{return MarvelData($0)}
+            movieList = jsonArray.compactMap{return MatchData($0)}
             
             self.tableView.reloadData()
             
@@ -120,12 +119,16 @@ class FirstViewController: UIViewController, UITableViewDelegate, UITableViewDat
 }
 
 
-struct MarvelData {
-    var movieName: String
-    var movieYear: Int
+struct MatchData {
+    var team1Name: String
+    var team2Name: String
+    var score: String
+    var dateMatch: String
     init(_ dictionary: [String: Any]) {
-        self.movieName = dictionary["name"] as? String ?? "NA"
-        self.movieYear = dictionary["year"] as? Int ?? 1970
+        self.team1Name = dictionary["team1"] as? String ?? "NA1"
+        self.team2Name = dictionary["team2"] as? String ?? "NA2"
+        self.score = dictionary["score"] as? String ?? "0 - 0"
+        self.dateMatch = dictionary["dateMatch"] as? String ?? "dd/mm/aa"
     }
 }
 
