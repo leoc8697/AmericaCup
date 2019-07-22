@@ -15,11 +15,13 @@ class FirstViewController: UIViewController {
     
     @IBOutlet weak var tableView: UITableView!
     
-    
+   
     var movieList = [MarvelData]()
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        // Do any additional setup after loading the view, typically from a nib.
         
         let url = Bundle.main.url(forResource: "response", withExtension: "json")
         
@@ -86,16 +88,13 @@ class FirstViewController: UIViewController {
             print(name ?? "NA")
             print(jsonArray.last!["year"] as? Int ?? 1970)
             
-            for json in jsonArray
-            {
-                guard let movieName = json["name"] as? String else{ return }
-                guard let movieYear = json["year"] as? Int else{ return }
-                movieList.append(MarvelData(movieName: movieName, movieYear: movieYear))
-            }
+            movieList = jsonArray.compactMap{return MarvelData($0)}
             
             self.tableView.reloadData()
             
         }
+        
+        
         
     }
     
@@ -122,37 +121,6 @@ class FirstViewController: UIViewController {
     
 }
 
-struct MarvelData {
-    
-    let movieName: String
-    let movieYear: Int
-    
-    public init(movieName: String, movieYear: Int) {
-        self.movieName = movieName
-        self.movieYear = movieYear
-    }
-        
-        // Do any additional setup after loading the view.
-}
-
-func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-    return movieList.count
-}
-
-func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-    
-}
-
-func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-    let currentMovie = movieList[indexPath.row]
-    let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as UITableViewCell
-    cell.textLabel?.text = currentMovie.movieName
-    cell.detailTextLabel?.text = "\(currentMovie.movieYear)"
-    return cell
-}
-
-}
-
 
 struct MarvelData {
     var movieName: String
@@ -162,6 +130,5 @@ struct MarvelData {
         self.movieYear = dictionary["year"] as? Int ?? 1970
     }
 }
-
 
 
