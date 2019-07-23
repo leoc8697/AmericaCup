@@ -15,8 +15,12 @@
 		6399F57F22D975CC00D0569E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6399F57D22D975CC00D0569E /* LaunchScreen.storyboard */; };
 		6399F58A22D975CD00D0569E /* AmericaCupTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6399F58922D975CD00D0569E /* AmericaCupTests.swift */; };
 		6399F59522D975CD00D0569E /* AmericaCupUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6399F59422D975CD00D0569E /* AmericaCupUITests.swift */; };
+		DF6D7FAF22E694BC007ADF24 /* MainCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF6D7FAE22E694BC007ADF24 /* MainCollectionViewCell.swift */; };
+		DF6E2E6022E6157400AC436D /* matches.json in Resources */ = {isa = PBXBuildFile; fileRef = DF6E2E5F22E6157400AC436D /* matches.json */; };
 		DF7E54A922E56393004BED88 /* marvel.json in Resources */ = {isa = PBXBuildFile; fileRef = DF7E54A822E56393004BED88 /* marvel.json */; };
 		DF7E54AB22E563D3004BED88 /* response.json in Resources */ = {isa = PBXBuildFile; fileRef = DF7E54AA22E563D3004BED88 /* response.json */; };
+		DFB2642222E6AD480037E57E /* PartidoService.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFB2642122E6AD480037E57E /* PartidoService.swift */; };
+		DFB2642422E6AEDB0037E57E /* Partido.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFB2642322E6AEDB0037E57E /* Partido.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,8 +55,12 @@
 		6399F59022D975CD00D0569E /* AmericaCupUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AmericaCupUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6399F59422D975CD00D0569E /* AmericaCupUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AmericaCupUITests.swift; sourceTree = "<group>"; };
 		6399F59622D975CD00D0569E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DF6D7FAE22E694BC007ADF24 /* MainCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCollectionViewCell.swift; sourceTree = "<group>"; };
+		DF6E2E5F22E6157400AC436D /* matches.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = matches.json; sourceTree = "<group>"; };
 		DF7E54A822E56393004BED88 /* marvel.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = marvel.json; sourceTree = "<group>"; };
 		DF7E54AA22E563D3004BED88 /* response.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = response.json; sourceTree = "<group>"; };
+		DFB2642122E6AD480037E57E /* PartidoService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PartidoService.swift; sourceTree = "<group>"; };
+		DFB2642322E6AEDB0037E57E /* Partido.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Partido.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +113,7 @@
 			children = (
 				6399F57222D975BC00D0569E /* AppDelegate.swift */,
 				6399F57422D975BC00D0569E /* FirstViewController.swift */,
+				DF6D7FAE22E694BC007ADF24 /* MainCollectionViewCell.swift */,
 				6399F57622D975BC00D0569E /* SecondViewController.swift */,
 				6399F57822D975BC00D0569E /* Main.storyboard */,
 				6399F57B22D975CC00D0569E /* Assets.xcassets */,
@@ -112,6 +121,9 @@
 				6399F58022D975CC00D0569E /* Info.plist */,
 				DF7E54A822E56393004BED88 /* marvel.json */,
 				DF7E54AA22E563D3004BED88 /* response.json */,
+				DF6E2E5F22E6157400AC436D /* matches.json */,
+				DFB2642122E6AD480037E57E /* PartidoService.swift */,
+				DFB2642322E6AEDB0037E57E /* Partido.swift */,
 			);
 			path = AmericaCup;
 			sourceTree = "<group>";
@@ -239,6 +251,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				6399F57F22D975CC00D0569E /* LaunchScreen.storyboard in Resources */,
+				DF6E2E6022E6157400AC436D /* matches.json in Resources */,
 				6399F57C22D975CC00D0569E /* Assets.xcassets in Resources */,
 				DF7E54A922E56393004BED88 /* marvel.json in Resources */,
 				DF7E54AB22E563D3004BED88 /* response.json in Resources */,
@@ -268,8 +281,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				6399F57722D975BC00D0569E /* SecondViewController.swift in Sources */,
+				DF6D7FAF22E694BC007ADF24 /* MainCollectionViewCell.swift in Sources */,
+				DFB2642222E6AD480037E57E /* PartidoService.swift in Sources */,
 				6399F57322D975BC00D0569E /* AppDelegate.swift in Sources */,
 				6399F57522D975BC00D0569E /* FirstViewController.swift in Sources */,
+				DFB2642422E6AEDB0037E57E /* Partido.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

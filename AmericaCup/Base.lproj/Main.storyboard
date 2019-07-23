@@ -10,7 +10,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--First-->
+        <!--Partidos-->
         <scene sceneID="hNz-n2-bh7">
             <objects>
                 <viewController id="9pv-A4-QxB" customClass="FirstViewController" customModule="AmericaCup" customModuleProvider="target" sceneMemberID="viewController">
@@ -18,66 +18,108 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="M9G-GH-X7T">
-                                <rect key="frame" x="0.0" y="62" width="414" height="21"/>
-                                <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="17"/>
-                                <nil key="textColor"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Partidos" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="M9G-GH-X7T">
+                                <rect key="frame" x="0.0" y="62" width="414" height="20"/>
+                                <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="17"/>
+                                <color key="textColor" red="0.065511645346844768" green="0.45755748056994816" blue="0.064889812175895539" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="03Y-7l-qCm">
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="hcN-bF-gs3">
                                 <rect key="frame" x="0.0" y="91" width="414" height="722"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" textLabel="Wk1-d0-TYo" detailTextLabel="iDp-fz-Hpy" rowHeight="58" style="IBUITableViewCellStyleSubtitle" id="dXe-8U-Zgh">
-                                        <rect key="frame" x="0.0" y="28" width="414" height="58"/>
-                                        <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="dXe-8U-Zgh" id="C36-M0-n4E">
-                                            <rect key="frame" x="0.0" y="0.0" width="414" height="57.5"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="wZ8-Jo-2XB">
+                                    <size key="itemSize" width="414" height="85"/>
+                                    <size key="headerReferenceSize" width="50" height="3"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="CeldaMain" id="Jc7-t8-TV6" customClass="MainCollectionViewCell" customModule="AmericaCup" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="3" width="414" height="85"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="85"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Wk1-d0-TYo">
-                                                    <rect key="frame" x="20" y="9" width="33.5" height="20.5"/>
-                                                    <autoresizingMask key="autoresizingMask"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                    <nil key="textColor"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
-                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Subtitle" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="iDp-fz-Hpy">
-                                                    <rect key="frame" x="20" y="32.5" width="44" height="14.5"/>
-                                                    <autoresizingMask key="autoresizingMask"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
-                                                    <nil key="textColor"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
+                                                <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="V6O-fI-qew">
+                                                    <rect key="frame" x="0.0" y="0.0" width="414" height="86"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <subviews>
+                                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="dog-R7-mk3" userLabel="imgTeam1">
+                                                            <rect key="frame" x="25" y="39" width="43" height="39"/>
+                                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                        </imageView>
+                                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="yTX-Ar-wxw" userLabel="imgTeam2">
+                                                            <rect key="frame" x="347" y="39" width="43" height="39"/>
+                                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                        </imageView>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="team1" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sTe-VB-RUX">
+                                                            <rect key="frame" x="99" y="48" width="46" height="21"/>
+                                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="score" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bHd-nP-VCN">
+                                                            <rect key="frame" x="186" y="47" width="43" height="21"/>
+                                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="team2" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tYC-R4-voc">
+                                                            <rect key="frame" x="275" y="46" width="49" height="21"/>
+                                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="dateMatch" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tJe-fX-W2U">
+                                                            <rect key="frame" x="25" y="8" width="215" height="21"/>
+                                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                    </subviews>
+                                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </view>
                                             </subviews>
-                                        </tableViewCellContentView>
-                                    </tableViewCell>
-                                </prototypes>
+                                        </view>
+                                        <connections>
+                                            <outlet property="dateMatch" destination="tJe-fX-W2U" id="mud-Pv-vhr"/>
+                                            <outlet property="imgTeam1" destination="dog-R7-mk3" id="OBZ-Vc-xfu"/>
+                                            <outlet property="imgTeam2" destination="yTX-Ar-wxw" id="30V-hY-nTh"/>
+                                            <outlet property="score" destination="bHd-nP-VCN" id="alo-cp-VNb"/>
+                                            <outlet property="team1" destination="sTe-VB-RUX" id="Bwr-el-nyH"/>
+                                            <outlet property="team2" destination="tYC-R4-voc" id="mC2-8E-hUT"/>
+                                        </connections>
+                                    </collectionViewCell>
+                                </cells>
+                                <collectionReusableView key="sectionHeaderView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="YXC-Sk-UMm">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="3"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                </collectionReusableView>
                                 <connections>
-                                    <outlet property="dataSource" destination="9pv-A4-QxB" id="8Pb-ca-oYP"/>
-                                    <outlet property="delegate" destination="9pv-A4-QxB" id="bnH-60-kDN"/>
+                                    <outlet property="dataSource" destination="9pv-A4-QxB" id="Pk4-Wk-SHO"/>
+                                    <outlet property="delegate" destination="9pv-A4-QxB" id="44M-Pt-LSk"/>
                                 </connections>
-                            </tableView>
+                            </collectionView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="M9G-GH-X7T" firstAttribute="leading" secondItem="PQr-Ze-W5v" secondAttribute="leading" id="6YQ-9D-HPI"/>
-                            <constraint firstItem="03Y-7l-qCm" firstAttribute="top" secondItem="M9G-GH-X7T" secondAttribute="bottom" constant="8" id="9lG-HP-v6C"/>
-                            <constraint firstItem="03Y-7l-qCm" firstAttribute="trailing" secondItem="PQr-Ze-W5v" secondAttribute="trailing" id="Pcp-Ux-xzS"/>
-                            <constraint firstItem="03Y-7l-qCm" firstAttribute="top" secondItem="M9G-GH-X7T" secondAttribute="bottom" constant="8" id="Ttc-oI-hmh"/>
-                            <constraint firstItem="03Y-7l-qCm" firstAttribute="leading" secondItem="PQr-Ze-W5v" secondAttribute="leading" id="Xue-PU-9bC"/>
                             <constraint firstItem="M9G-GH-X7T" firstAttribute="top" secondItem="PQr-Ze-W5v" secondAttribute="top" constant="18" id="a19-Ks-mkH"/>
                             <constraint firstItem="M9G-GH-X7T" firstAttribute="trailing" secondItem="PQr-Ze-W5v" secondAttribute="trailing" id="ivl-RP-ouB"/>
-                            <constraint firstItem="03Y-7l-qCm" firstAttribute="top" secondItem="M9G-GH-X7T" secondAttribute="bottom" constant="8" id="l2m-kF-LSJ"/>
-                            <constraint firstItem="03Y-7l-qCm" firstAttribute="bottom" secondItem="PQr-Ze-W5v" secondAttribute="bottom" id="qso-LW-6em"/>
                             <constraint firstItem="M9G-GH-X7T" firstAttribute="top" secondItem="PQr-Ze-W5v" secondAttribute="top" constant="18" id="upU-Ci-Shv"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="PQr-Ze-W5v"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="First" image="first" id="acW-dT-cKf"/>
+                    <tabBarItem key="tabBarItem" title="Partidos" image="first" id="acW-dT-cKf"/>
                     <connections>
+                        <outlet property="collectionViewMain" destination="hcN-bF-gs3" id="MOE-8i-e2p"/>
                         <outlet property="labelHeader" destination="M9G-GH-X7T" id="JZ5-tY-eRO"/>
-                        <outlet property="tableView" destination="03Y-7l-qCm" id="mS0-as-OOE"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="W5J-7L-Pyd" sceneMemberID="firstResponder"/>

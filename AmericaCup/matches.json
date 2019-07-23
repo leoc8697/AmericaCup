@@ -1,0 +1,47 @@
+{
+    "title":"Partidos",
+    "matches":[
+        {
+            "team1":"Brasil",
+            "team2":"Bolivia",
+            "score":"3 - 0",
+            "dateMatch":" Viernes, 14 de Junio"
+        },
+        {
+            "team1":"Venezuela",
+            "team2":"Peru",
+            "score":"0 - 0",
+            "dateMatch":" Sabado, 15 de Junio"
+        },
+        {
+            "team1":"Argentina",
+            "team2":"Colombia",
+            "score":"0 - 2",
+            "dateMatch":" Sabado, 15 de Junio"
+        },
+        {
+            "team1":"Paraguay",
+            "team2":"Qatar",
+            "score":"2 - 2",
+            "dateMatch":" Domingo, 16 de Junio"
+        },
+        {
+            "team1":"Uruguay",
+            "team2":"Ecuador",
+            "score":"4 - 0",
+            "dateMatch":" Domingo, 16 de Junio"
+        },
+        {
+            "team1":"Chile",
+            "team2":"Japon",
+            "score":"4 - 0",
+            "dateMatch":" Lunes, 17 de Junio"
+        },
+        {
+            "team1":"Brasil",
+            "team2":"Bolivia",
+            "score":"3 - 0",
+            "dateMatch":" Viernes, 14 de Junio"
+        }
+    ]
+}
